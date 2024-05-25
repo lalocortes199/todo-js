@@ -1,0 +1,81 @@
+:root {
+    --primary: #A5C882;
+    --secondary: #D33F49;
+    --light: #fff;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: var(--diabled);
+}
+
+.roundBorder {
+    border-radius: 10px;
+    padding: 2px;
+ 
+}
+
+.list {
+    margin: 25px auto;
+    padding: 20px;
+    background-color: var(--light);
+    max-width: 350px;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    background-color: var(--primary);
+}
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+.addTaskButton,
+.removeButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 0;
+}
+
+.addTaskButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-size: 10px;
+    background-color: var(--diabled);
+}
+
+.removeButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
